@@ -1,1 +1,474 @@
-<html><body>Initializing PR Dashboard...</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSAC PR Dashboard — 2026-05-20</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Red Hat Display",system-ui,sans-serif;background:#f5f5f5;color:#151515;line-height:1.5}
+.container{max-width:960px;margin:0 auto;padding:24px 16px}
+header{margin-bottom:24px}
+header h1{font-size:1.5rem;color:#151515}
+header .updated{color:#6a6e73;font-size:.85rem}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.card{background:#fff;border-radius:8px;padding:16px 20px;min-width:120px;flex:1;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.card-num{font-size:1.8rem;font-weight:700}
+.card-label{font-size:.85rem;color:#6a6e73}
+section{margin-bottom:32px}
+h2{font-size:1.15rem;margin-bottom:12px}
+h2 a{color:#151515;text-decoration:none}
+h2 a:hover{text-decoration:underline}
+.pr-table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.pr-table th{text-align:left;padding:10px 12px;background:#f0f0f0;font-size:.8rem;text-transform:uppercase;color:#6a6e73}
+.pr-table td{padding:10px 12px;border-top:1px solid #eee;font-size:.9rem;vertical-align:top}
+.pr-table td a{color:#06c;text-decoration:none}
+.pr-table td a:hover{text-decoration:underline}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;color:#fff;font-size:.75rem;white-space:nowrap}
+.age-stale{color:#c9190b;font-weight:700}
+details summary{cursor:pointer;color:#06c;font-size:.85rem}
+.checks{margin-top:6px;font-size:.8rem;border-collapse:collapse}
+.checks td{padding:3px 8px;border:none}
+.muted{color:#6a6e73;font-style:italic}
+.bar-bg{display:inline-block;width:100px;height:10px;background:#eee;border-radius:5px;vertical-align:middle;margin-right:6px}
+.bar{height:100%;border-radius:5px}
+.all-clear{text-align:center;color:#3e8635;font-size:1.2rem;padding:40px 0}
+footer{text-align:center;color:#6a6e73;font-size:.8rem;margin-top:40px;padding-top:16px;border-top:1px solid #ddd}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>OSAC PR Dashboard</h1>
+<div class="updated">Last updated: 2026-05-20 12:59 UTC</div>
+</header>
+<div class="cards"><div class="card" style="border-top:4px solid #f0ab00"><div class="card-num">20</div><div class="card-label">Needs Review</div></div>
+<div class="card" style="border-top:4px solid #c9190b"><div class="card-num">20</div><div class="card-label">CI Failing</div></div>
+<div class="card" style="border-top:4px solid #6a6e73"><div class="card-num">7</div><div class="card-label">Stale (7+ days)</div></div>
+<div class="card" style="border-top:4px solid #3e8635"><div class="card-num">1</div><div class="card-label">Approved</div></div>
+<div class="card" style="border-top:4px solid #6a6e73"><div class="card-num">9</div><div class="card-label">Draft</div></div></div>
+
+
+<section>
+<h2><a href="https://github.com/osac-project/enhancement-proposals/pulls">osac-project/enhancement-proposals</a> (8)</h2>
+<table class="pr-table">
+<thead><tr><th>Status</th><th>Title</th><th>Author</th><th>Age</th><th>CI</th></tr></thead>
+<tbody><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/13">Add Slurm on OpenShift enhancement proposal</a></td>
+<td><a href="https://github.com/swati-kale">swati-kale</a></td>
+<td class="age-stale">154d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/23654757248/job/68908872792">pre-commit</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">changes requested</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/20">feat(arch): Introduce region and Availability Zone API abstraction</a></td>
+<td><a href="https://github.com/eranco74">eranco74</a></td>
+<td class="age-stale">114d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/22564353209/job/65357327487">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs re-review</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/28">MGMT-23456: Enhancement proposal for quota management</a></td>
+<td><a href="https://github.com/zszabo-rh">zszabo-rh</a></td>
+<td class="age-stale">68d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/23841687631/job/69498633915">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs re-review</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/31">Update the bare metal fulfillment proposal</a></td>
+<td><a href="https://github.com/tzumainn">tzumainn</a></td>
+<td class="age-stale">54d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/25921587123/job/76191735348">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">changes requested</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/38">Add multi-tenant organization architecture with hierarchical project permissions</a></td>
+<td><a href="https://github.com/avishayt">avishayt</a></td>
+<td class="age-stale">14d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/25654429090/job/75299451437">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/39">OSAC-46: Add VM instance types enhancement proposal</a></td>
+<td><a href="https://github.com/avishayt">avishayt</a></td>
+<td class="age-stale">13d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/25986605520/job/76384992046">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/40">EP: Repository Consolidation - Mono-Repo for OSAC Core Components</a></td>
+<td><a href="https://github.com/eranco74">eranco74</a></td>
+<td class="age-stale">12d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/25504876505/job/74847613998">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">changes requested</span></td>
+<td><a href="https://github.com/osac-project/enhancement-proposals/pull/43">TBD: Add CaaS storage proxy CSI driver enhancement proposal</a></td>
+<td><a href="https://github.com/avishayt">avishayt</a></td>
+<td class="">3d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/enhancement-proposals/actions/runs/26113009298/job/76794879588">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr></tbody>
+</table>
+</section>
+<section>
+<h2><a href="https://github.com/osac-project/fulfillment-service/pulls">osac-project/fulfillment-service</a> (15)</h2>
+<table class="pr-table">
+<thead><tr><th>Status</th><th>Title</th><th>Author</th><th>Age</th><th>CI</th></tr></thead>
+<tbody><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/482">MGMT-24095: fix misleading delete UX in CLI</a></td>
+<td><a href="https://github.com/eranco74">eranco74</a></td>
+<td class="age-stale">17d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375792">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375795">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375797">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375799">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375810">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375831">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594064/job/74102375840">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25274594069/job/74102375813">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/512">NO-ISSUE: Move service Helm chart from `charts/service` to `chart`</a></td>
+<td><a href="https://github.com/jhernand">jhernand</a></td>
+<td class="age-stale">11d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714445/job/76412381110">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381030">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381031">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381036">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381044">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381046">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381048">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996714454/job/76412381049">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/527">OSAC-360: migrate to Red Hat hardened images with Go 1.26</a></td>
+<td><a href="https://github.com/adriengentil">adriengentil</a></td>
+<td class="">6d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827207172">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827207651">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827207953">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827208156">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827208165">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827208171">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810584996/job/75827236806">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25810586340/job/75825461043">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">changes requested</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/528">Add name/UUID lookup support to CLI commands</a></td>
+<td><a href="https://github.com/SiddarthR56">SiddarthR56</a></td>
+<td class="">6d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764343">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764344">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764345">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764347">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764364">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764373">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265481/job/76670764375">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26077265484/job/76670764322">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/537">NO-ISSUE: Bump the go-dependencies group across 1 directory with 15 updates</a></td>
+<td><a href="https://github.com/dependabot">dependabot</a></td>
+<td class="">6d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113123/job/76905153115">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153260">Run unit tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153267">Run integration tests - Helm</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153276">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153283">Build binaries</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153290">Check code format</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153307">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147113290/job/76905153320">Run integration tests - Kustomize</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/541">NO-ISSUE: Add security contexts to service chart deployments</a></td>
+<td><a href="https://github.com/jhernand">jhernand</a></td>
+<td class="">5d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261266">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261271">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261273">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261276">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261280">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261281">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667424/job/76412261283">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/25996667428/job/76412261427">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/548">OSAC-462: Modernize describe cluster and computeinstance commands</a></td>
+<td><a href="https://github.com/osac-jira-ai-issue-solver">osac-jira-ai-issue-solver</a></td>
+<td class="">3d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td colspan="3" class="muted">No check data</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/552">OSAC-851: Sync Projects to OpenShift Hubs</a></td>
+<td><a href="https://github.com/CrystalChun">CrystalChun</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581335">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581349">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581355">Run unit tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581358">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581361">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581367">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149758/job/76843581383">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26127149757/job/76843581290">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/553">NO-ISSUE: Convert `EffectiveNetworkAttachments` tests to Ginkgo</a></td>
+<td><a href="https://github.com/jhernand">jhernand</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839368">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839408">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839422">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839425">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839429">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839448">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319857/job/76696839517">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26085319890/job/76696839675">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/554">OSAC-483: Add .ai-bot/ configuration for AI bug fix bot</a></td>
+<td><a href="https://github.com/ItzikEzra-rh">ItzikEzra-rh</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td colspan="3" class="muted">No check data</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/558">OSAC-831: Public grpc server for PublicIPAttachment resources</a></td>
+<td><a href="https://github.com/DakCrowder">DakCrowder</a></td>
+<td class="">0d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881141">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881495">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881702">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881730">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881855">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881866">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269906/job/76821881901">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26120269905/job/76820112034">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/561">OSAC-902: Add Authorization Resource Functions</a></td>
+<td><a href="https://github.com/CrystalChun">CrystalChun</a></td>
+<td class="">0d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126641979/job/76841896452">image</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896222">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896230">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896236">Run unit tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896258">Run integration tests - Kustomize</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896273">Build binaries</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896274">Run integration tests - Helm</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26126642084/job/76841896413">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/562">NO-ISSUE: Remove verbose debug logging from token sources</a></td>
+<td><a href="https://github.com/jhernand">jhernand</a></td>
+<td class="">0d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751331">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751333">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751337">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751360">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751366">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751370">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596527/job/76906751378">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26147596568/job/76906751520">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/563">NO-ISSUE: Remove credentials and tokens from debug logs</a></td>
+<td><a href="https://github.com/jhernand">jhernand</a></td>
+<td class="">0d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319253">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319276">Run unit tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319277">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319299">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319305">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319376">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344550/job/76919319534">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26151344615/job/76919319502">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/fulfillment-service/pull/565">OSAC-251: Remove deprecated subnet and security_groups fields</a></td>
+<td><a href="https://github.com/ori-amizur">ori-amizur</a></td>
+<td class="">0d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941403964">Run unit tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941403970">Check pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941403976">Run integration tests - Helm</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941404001">Run integration tests - Kustomize</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941404003">Check code format</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941404006">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744592/job/76941404059">Build binaries</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/fulfillment-service/actions/runs/26157744501/job/76941403924">image</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr></tbody>
+</table>
+</section>
+<section>
+<h2><a href="https://github.com/osac-project/osac-aap/pulls">osac-project/osac-aap</a> (10)</h2>
+<table class="pr-table">
+<thead><tr><th>Status</th><th>Title</th><th>Author</th><th>Age</th><th>CI</th></tr></thead>
+<tbody><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/190">Replace ESI CLI Commands With Ansible Modules</a></td>
+<td><a href="https://github.com/ajamias">ajamias</a></td>
+<td class="age-stale">158d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/21403320798/job/61620334498">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/21403320864/job/61620188147">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/266">MGMT-23826: Add tenant storage provisioning role and playbooks</a></td>
+<td><a href="https://github.com/zszabo-rh">zszabo-rh</a></td>
+<td class="age-stale">22d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25813008776/job/75834049406">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25813008778/job/75834049185">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25813008778/job/75834049262">integration-tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25813008799/job/75834049141">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/292">OSAC-739: Fix security group label not propagated to VM pods</a></td>
+<td><a href="https://github.com/SiddarthR56">SiddarthR56</a></td>
+<td class="age-stale">11d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25572114101/job/75070157222">integration-tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25572114101/job/75070157224">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25572114107/job/75070157106">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/25572114120/job/75070157148">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/294">feat(ocp_virt_vm): add Windows VM support to unified template</a></td>
+<td><a href="https://github.com/amej">amej</a></td>
+<td class="age-stale">9d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26150181991/job/76915325271">integration-tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26150181991/job/76915325696">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26150181925/job/76915325329">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26150182119/job/76915325432">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/296">OSAC-43: adds VAST storage provider</a></td>
+<td><a href="https://github.com/wgordon17">wgordon17</a></td>
+<td class="">6d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26009198722/job/76446394769">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26009198731/job/76446394715">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26009198736/job/76446394775">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26009198736/job/76446394779">integration-tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/301">Add HostLease playbooks, bm_host_image_provision role, and AAP config</a></td>
+<td><a href="https://github.com/DanNiESh">DanNiESh</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26119896934/job/76818931236">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26119897007/job/76818789980">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26119896940/job/76818790130">integration-tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26119896940/job/76818790147">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/305">Bump actions/checkout from 4 to 6</a></td>
+<td><a href="https://github.com/dependabot">dependabot</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077135898/job/76670386308">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077135910/job/76670386347">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077135950/job/76670386381">integration-tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077135950/job/76670386396">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/306">Bump azure/setup-helm from 4 to 5</a></td>
+<td><a href="https://github.com/dependabot">dependabot</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077137263/job/76670390278">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077137267/job/76670390788">integration-tests</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077137267/job/76670390789">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26077137306/job/76670390495">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/307">OSAC-483: Add .ai-bot/ configuration for AI bug fix bot</a></td>
+<td><a href="https://github.com/ItzikEzra-rh">ItzikEzra-rh</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td colspan="3" class="muted">No check data</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-aap/pull/309">OSAC-894: rename massopencloud collections to osac namespace</a></td>
+<td><a href="https://github.com/obochan-rh">obochan-rh</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26159204043/job/76946409457">integration-tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26159204043/job/76946409464">ansible-lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26159203999/job/76946409429">build-execution-environment</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-aap/actions/runs/26159204044/job/76946409352">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr></tbody>
+</table>
+</section>
+<section>
+<h2><a href="https://github.com/osac-project/osac-operator/pulls">osac-project/osac-operator</a> (7)</h2>
+<table class="pr-table">
+<thead><tr><th>Status</th><th>Title</th><th>Author</th><th>Age</th><th>CI</th></tr></thead>
+<tbody><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/210">MGMT-23828: Add automatic storage provisioning to Tenant controller</a></td>
+<td><a href="https://github.com/zszabo-rh">zszabo-rh</a></td>
+<td class="age-stale">22d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25813015412/job/75834071956">Lint Helm charts</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25813015401/job/75834071888">lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25813015401/job/75834072018">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25813015413/job/75834072102">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25813015437/job/75834072032">Run Tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25813015437/job/75834582197">build</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/218">NO-ISSUE: adds kubeconform kube-linter and pre-push hooks to osac-operator</a></td>
+<td><a href="https://github.com/wgordon17">wgordon17</a></td>
+<td class="age-stale">15d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25924448336/job/76201796288">Validate manifests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25924448336/job/76201796306">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25924448328/job/76201796501">Run Tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25924448328/job/76202295507">build</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25924448348/job/76201796285">lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/25924448348/job/76201796294">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#c9190b">CI failing</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/225">NO-ISSUE: Bump the go-dependencies group across 1 directory with 9 updates</a></td>
+<td><a href="https://github.com/dependabot">dependabot</a></td>
+<td class="age-stale">13d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26077033072/job/76670089324">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26077033072/job/76670089368">lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26077033083/job/76670089353">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26077033122/job/76670089477">Run Tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26077033122/job/76670412825">build</a></td><td style="color:#c9190b;font-weight:600">Fail</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/244">NO-ISSUE: add make tag-api target for API module releases</a></td>
+<td><a href="https://github.com/tzvatot">tzvatot</a></td>
+<td class="">2d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26025615011/job/76498048287">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26025615032/job/76498048383">Run Tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26025615032/job/76498520059">build</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26025615050/job/76498048244">lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26025615050/job/76498048310">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/246">Bump actions/checkout from 4 to 6</a></td>
+<td><a href="https://github.com/dependabot">dependabot</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076900014/job/76669699594">lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076900014/job/76669699597">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076900016/job/76669699804">Run Tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076900016/job/76669952248">build</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076900028/job/76669699650">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/247">Bump azure/setup-helm from 4 to 5</a></td>
+<td><a href="https://github.com/dependabot">dependabot</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076901136/job/76669702704">Check generated code</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076901143/job/76669702550">lint</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076901143/job/76669702558">pre-commit</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076901153/job/76669702730">Run Tests</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076901153/job/76669958286">build</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr>
+<tr><td><a href="https://github.com/osac-project/osac-operator/actions/runs/26076901270/job/76669702871">Lint Helm charts</a></td><td style="color:#3e8635;font-weight:600">Pass</td></tr></table></details></td>
+</tr><tr>
+<td><span class="badge" style="background:#f0ab00">needs review</span></td>
+<td><a href="https://github.com/osac-project/osac-operator/pull/248">OSAC-483: Add .ai-bot/ configuration for AI bug fix bot</a></td>
+<td><a href="https://github.com/ItzikEzra-rh">ItzikEzra-rh</a></td>
+<td class="">1d</td>
+<td><details><summary>checks</summary><table class="checks"><tr><td colspan="3" class="muted">No check data</td></tr></table></details></td>
+</tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>CI Health</h2>
+<table class="pr-table">
+<thead><tr><th>Repo</th><th>Checks</th><th>Pass Rate</th></tr></thead>
+<tbody><tr><td>osac-project/enhancement-proposals</td><td>9</td><td><div class="bar-bg"><div class="bar" style="width:88%;background:#3e8635"></div></div>88%</td></tr><tr><td>osac-project/fulfillment-service</td><td>152</td><td><div class="bar-bg"><div class="bar" style="width:91%;background:#3e8635"></div></div>91%</td></tr><tr><td>osac-project/osac-aap</td><td>42</td><td><div class="bar-bg"><div class="bar" style="width:90%;background:#3e8635"></div></div>90%</td></tr><tr><td>osac-project/osac-operator</td><td>33</td><td><div class="bar-bg"><div class="bar" style="width:96%;background:#3e8635"></div></div>96%</td></tr></tbody>
+</table>
+</section>
+<footer>Generated by pr-notify · 2026-05-20 12:59 UTC</footer>
+</div>
+</body>
+</html>
